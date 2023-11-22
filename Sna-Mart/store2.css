@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: dimgray;
+}
+.header{
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px 0;
+}
+.logo{
+    width: 30%;
+    float: left;
+}
+.logo img{
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+.serch{
+    width: 70%;
+    float: left; 
+    display: flex;
+    justify-content: center;
+    height: 130px;
+    background-color: white;
+}
+.serch input{
+    width: 70%;
+    height: 40px;
+    margin-top: 45px; 
+    float: left;
+    background-color: pink;
+    color: black;
+}
+.serch ::placeholder{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.719);
+}
+.icon1{
+    width: 5%;
+    height: 40px;
+    float: left;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(1,164,238);
+    cursor: pointer;
+}
+.icon1 i{
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+}
+.menu{
+    width: 100%;
+    display: flex;
+   justify-content: center;
+    background-color: Pink;
+    box-shadow: 1px 1px 5px 0;
+}
+.menu-box{
+    width: 70%;
+    background-color: pink;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+}
+.menu-box ul{
+    display: flex;
+}
+.menu-box a{
+    /* display: block; */
+    text-decoration: none;
+    color: black;
+    padding: 13px;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 5px;
+} 
+.menu-box a:hover{
+    color: white;
+    background-color: rgb(1,164,238) ;
+    border-radius: 5px;
+}
+.container{
+    box-shadow: 1px 1px 5px 0;
+    width: 70%;  
+    margin: auto;
+    background-color: white;
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+}
+.box-tt {
+    width: 100%;
+    background-color: rgb(1,164,238);
+    padding: 8px;
+}
+.box-tt:hover{
+    color: white;
+}
+.box{
+    width: 24%;
+    height: 360px;
+    margin-top: 12px;
+    background-color: red;
+}
+.tt-img{
+    width: 100%;
+    height: 55%;
+    background-color: white;
+}
+.tt-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.tt-txt{
+    width: 100%;
+    height: 25%;
+    background-color: pink;
+}
+.tt-txt h1{
+    font-size: 25px;
+    text-align: center;
+}
+.tt-txt h1:hover{
+    color: white;
+}
+.luy{
+    width: 100%;
+    height: 7%;
+    text-align: right;
+    background-color: pink;
+}
+.luy:hover{
+    color: red;
+}
+.tt-las{
+    width: 100%;
+    height: 13%;
+    background-color: orange;
+}
+.tt-las ul{
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    display: flex;
+}
+.tt-las li{
+    height: 100%;
+    width: 33.333%;
+    background-color: purple;
+}
+.tt-las a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 8px;
+}
+.tt-las a:hover{
+    color: white;
+}
+.footer{
+    width: 100%;
+    background-color: pink;
+    margin-top: 13px;
+    box-shadow: 1px 1px 5px 0;
+}
+.footer h1{
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.footer h1:hover{
+    color: white;
+}
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px){ 
+	
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	.header{
+        width: 100%;
+        padding: 0px;
+        background-color: white;
+    }
+    .logo{
+        width: 30%;
+        float: left;
+    }
+    .logo img{
+        width: 100%;
+        height: 130px;
+        object-fit: contain;
+    }
+    .serch input{
+        margin-left: 50px;
+    }
+    .menu-box{
+        width: 100%;
+        padding: 5px;
+    }
+    .menu-box a{
+        padding: 13px;
+        font-size: 10px;
+}
+.container{
+    width: 100%;  
+    padding: 10px;
+}
+.box-tt {
+    font-size: 12px;
+    padding: 5px;
+}
+.box{
+    width: 44%;
+    height: 340px;
+    margin-top: 12px;
+}
+
+.tt-txt h1{
+    font-size: 16px;
+}
+.tt-txt p{
+    font-size: 13px;
+}
+.tt-las a{
+    font-size: 10px;
+}
+.footer h1{
+    padding: 15px;
+    font-size: 20px;
+}
+}

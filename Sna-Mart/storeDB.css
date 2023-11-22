@@ -1,0 +1,95 @@
+body{
+    background-color: dimgray;
+}
+  .container{
+    margin-top: 150px;
+}
+  .container h1:hover{
+    color: rgba(255, 0, 0, 0.555);
+  }
+  .container label:hover{
+    color: rgba(255, 0, 0, 0.555);
+  }
+  .bt button{
+    margin-top: 40px;
+    width: 40%;
+    margin-left: 30%;
+  }
+  .bt button:hover{
+    background-color: rgba(255, 0, 0, 0.582);
+    color: white;
+  }
+  .rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 50px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: red;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: red;
+  }
+  
+  .rating > input:checked ~ label {
+    color: red;
+  }
+  .by p{
+    background-color: azure;
+    margin-top: 30px;
+    color: black;
+    text-align: center;
+  }
+  .by p:hover{
+    background-color: rgba(255, 0, 0, 0.555);
+  }
+  /*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .container{
+    max-width: 40%;
+  }
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.container{
+    max-width: 60%;
+  }
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container{
+    max-width: 70%;
+  }
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px){ 
+	
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 400px) and (max-width: 575.98px) {
+  .container{
+    max-width: 50%;
+  }
+}
+
+  
+  
+  

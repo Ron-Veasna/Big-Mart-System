@@ -1,0 +1,264 @@
+body{
+    background-color: dimgray;
+}
+.logo-box{
+    width: 80%;
+    margin-top: 10px;
+    background-color: pink;
+    display: flex;
+}
+.logo{
+}
+.logo img{
+    width: 50%;
+    margin-left: 100px;
+    cursor: pointer;
+}
+.name{
+
+}
+.name h1{
+    cursor: pointer;
+    color: white;
+    font-size: 66px;
+    padding: 34px;
+    font-family: 'Bungee', cursive;
+}
+.name h1:hover{
+    color: black;
+}
+.menu-box{
+    margin-top: 15px;
+    background-color: pink;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.menu-box ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.menu-box li{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.menu-box a{
+    font-size: 30px;
+    color: rgb(87, 87, 87);
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.menu-box a:hover{
+    background-color: white;
+    color: black;
+}
+.box{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.box1{
+    height: 600px;
+}
+.box2{
+    background-color: red;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.img1{
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    background-color: white;
+    box-sizing: border-box;
+}
+.img1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.img2{
+    height: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.img2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.enjoy{
+    margin-top: 15px;
+    background-color: pink;
+}
+.enjoy h1{
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+.footer{
+    margin-top: 15px;
+    background-color: pink;
+}
+.footer h1{
+    font-size: 35px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Bungee', cursive;
+    cursor: pointer;
+}
+.footer h1:hover{
+    color: black;
+}
+
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.name h1{
+        font-size: 40px;
+        padding: 30px;
+    }
+    .logo img{
+        width: 80%;
+        margin-left: 30px;
+    }
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .name h1{
+        font-size: 33px;
+        padding: 18px;
+        margin-top: 14px;
+    }
+    .logo img{
+        width: 80%;
+        margin-left: 30px;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px){ 
+    .name h1{
+        font-size: 22px;
+        padding: 14px;
+        margin-top: 4px;
+    }
+    .logo img{
+        width: 80%;
+        margin-left: 20px;
+    }
+    .menu-box{
+        margin-top: 10px;
+    }
+    .menu-box ul{
+        gap: 1px;
+    }
+    .menu-box li{
+        gap: 10px;
+    }
+    .menu-box a{
+        font-size: 15px;
+        padding: 12px;
+        gap: 5px;
+    }
+    .box1{
+        display: none;
+    }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .name h1{
+        font-size: 20px;
+        padding: 13px;
+    }
+    .logo-box{
+        width: 100%;
+    }
+    .logo img{
+        width: 70%;
+        margin-left: 20px;
+    }
+    .menu-box{
+        margin-top: 10px;
+    }
+    .menu-box ul{
+        gap: 1px;
+    }
+    .menu-box li{
+        gap: 10px;
+    }
+    .menu-box a{
+        font-size: 10px;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .box1{
+        display: none;
+    }
+    .box2{
+        background-color: red;
+        height: 300px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .img1{
+        width: 100%;
+        height: 50%;
+        padding: 10px;
+        background-color: white;
+        box-sizing: border-box;
+    }
+    .img1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .img2{
+        height: 50%;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: white;
+    }
+    .img2 img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .enjoy{
+        margin-top: 15px;
+        background-color: pink;
+    }
+    .enjoy h1{
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+    .footer h1{
+        font-size: 25px;
+    } 
+}
